@@ -24,7 +24,7 @@ def log_request(req: 'flask_request',res:str)-> None:
                         res))
 
 @app.route('/search4', methods=['POST'])
-def lalka() -> 'html':
+def result() -> 'html':
     phrase = request.form['phrase']
     letters = request.form['letters']
     title = 'Welcome to search4letters on the web!'
